@@ -5,6 +5,7 @@ import { Link } from 'react-router-dom';
 export default function OwnerDashboard() {
   const { token } = useAuth();
   const [data, setData] = useState(null);
+  const [sort, setSort] = useState({ field: 'date', order: 'desc' });
 
   useEffect(() => {
     fetch('http://localhost:5000/api/owner/dashboard', {
@@ -12,11 +13,9 @@ export default function OwnerDashboard() {
     })
       .then(r => r.json())
       .then(setData);
-  }, []);
+  }, [token]);
 
   if (!data) return <div className="page-section"><p>Loading...</p></div>;
-
-  const [sort, setSort] = useState({ field: 'date', order: 'desc' });
 
   function toggleSort(field) {
     setSort(s => ({ field, order: s.field === field && s.order === 'asc' ? 'desc' : 'asc' }));

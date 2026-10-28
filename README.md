@@ -316,7 +316,6 @@ ratings
 
 ## 💡 Best Practices Implemented
 
-1. **Clean Code & Zero Plagiarism:** Crafted entirely with idiomatic JavaScript, clean separation of concerns, and zero AI-marker boilerplate comments.
-2. **Security:** Salted password hashing with `bcryptjs`, JWT bearer token authorization, strict role-based guards, and SQL parameterization preventing injection attacks.
-3. **Database Performance:** Connection pooling, foreign key constraints, cascaded deletions, and index-optimized sorting.
-4. **UX / UI Excellence:** Centered layouts, real-time input requirements checklist, floating notifications, responsive layout, and visual state feedback on actions.
+1. **Security:** Salted password hashing with `bcryptjs`, JWT bearer token authorization, strict role-based guards, and SQL parameterization preventing injection attacks.
+2. **Database Performance:** Connection pooling, foreign key constraints, cascaded deletions, and index-optimized sorting.
+3. **UX / UI Excellence:** Centered layouts, real-time input requirements checklist, floating notifications, responsive layout, and visual state feedback on actions.
